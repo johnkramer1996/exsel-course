@@ -2,7 +2,7 @@
  "name": "excel-course",
  "version": "1.0.0",
  "description": "pure js excel application",
- "main": "index.js",
+ "main": "test.js",
  "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1"
  },
