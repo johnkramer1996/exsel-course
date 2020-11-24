@@ -1,23 +1,23 @@
 {
-  "name": "excel-course",
-  "version": "1.0.0",
-  "description": "pure js excel application",
-  "main": "12.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/johnkramer1996/exsel-course.git"
-  },
-  "keywords": [
-    "js",
-    "excel"
-  ],
-  "author": "Vitalii Zinoveiv <vitalic.zinoviev@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/johnkramer1996/exsel-course/issues"
-  },
-  "homepage": "https://github.com/johnkramer1996/exsel-course#readme"
+ "name": "excel-course",
+ "version": "1.0.0",
+ "description": "pure js excel application",
+ "main": "index.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/johnkramer1996/exsel-course.git"
+ },
+ "keywords": [
+  "js",
+  "excel"
+ ],
+ "author": "Vitalii Zinoveiv <vitalic.zinoviev@gmail.com>",
+ "license": "ISC",
+ "bugs": {
+  "url": "https://github.com/johnkramer1996/exsel-course/issues"
+ },
+ "homepage": "https://github.com/johnkramer1996/exsel-course#readme"
 }
