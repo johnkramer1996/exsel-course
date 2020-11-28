@@ -7,9 +7,9 @@ const CODES = {
 export function createTable (rowsCount = 15) {
 	const rows = new Array(rowsCount)
 	.fill('')
-	.map(createRow);
+	.map(createRow).join('');
 	
-	return rows.join('');
+	return rows
 }
 
 function createRow(_, index) {
@@ -20,9 +20,10 @@ function createRow(_, index) {
 		: createCell(toCharCode(CODES.A + colIndex), index)).join('');
 
 	return `
-		<div class="row">
+		<div class="row" ${index ? `data-type="resizable"` : ''}>
 			<div class="row-info">
 				${index ? index : ''}
+				<div class="resize" data-resize="row"></div>
 			</div>
 			<div class="row-data">
 				${content}
@@ -32,10 +33,14 @@ function createRow(_, index) {
 }
 
 function createCol(code) {
-	return  `<div class="column">${code}</div>`;
+	return  `
+	<div class="column" data-type="resizable" data-code="${code}">
+		${code}
+		<div class="resize" data-resize="col"></div>
+	</div>`;
 }
 function createCell(code, index) {
-	return `<div class="cell" contenteditable="">${code}${index}</div>`
+	return `<div class="cell" contenteditable="" data-code="${code}" data-index="${index}">	</div>`
 }
 
 function toCharCode(codeIndex) {
